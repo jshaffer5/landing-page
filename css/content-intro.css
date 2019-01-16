@@ -1,0 +1,21 @@
+div#intro-highlights {
+    /* background: yellow; */
+    margin-bottom: 10%;
+    flex-direction: column; 
+}
+
+.intro-card {
+/* background-color: yellowgreen; */
+display: flex;
+align-items: center;
+margin: auto;
+}
+
+.intro-icon {
+    /* background-color: green; */
+    margin-right:15px;
+}
+
+.intro-comments {
+    /* background: red; */
+}
