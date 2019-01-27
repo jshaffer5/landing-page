@@ -4,7 +4,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.intro {
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+h2 {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+.welcome {
   background-color: #f1f1f1;
   background-image: url("http://lanone.it/wp-content/uploads/2017/04/home-sw.jpeg");
   text-align: center;
@@ -63,7 +73,7 @@ body {
 .main {
   padding: 16px;
   margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  height: 1500px; 
 }
 
 .content {
@@ -82,9 +92,10 @@ body {
 
 #video{
   display: block;
-  width: 30vw;
-  height: 30vh;
+  width: 40vw;
+  height: 40vh;
   margin: auto;
+  margin-bottom: 10%;
 }
 
 #contact-form {
@@ -95,6 +106,7 @@ body {
   text-align: center;
   height: 200px;
   margin-top: 50px;
+  margin-bottom: 10%
 }
   h2 {
     margin-bottom: 20px;

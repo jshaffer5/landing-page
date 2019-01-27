@@ -1,10 +1,17 @@
+div #services {
+    display:flex;
+    /* align-items: flex-center; */
+    margin-bottom: 10%;
+    margin-top: 50px;
+}
+
 div .service-card {
     background:rgb(81, 199, 253);
     margin:auto;
     padding: 8px;
     width: 20%;
     min-height: 370px;
-    margin-bottom: 30px;
+    margin-top: 0;
     border-radius: 8px;
     text-align: center;
 }
