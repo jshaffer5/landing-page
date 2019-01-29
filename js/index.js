@@ -28,31 +28,17 @@ function showMore() {
 
 window.onload = function() {
   $(".service-card").fadeIn("fast", function() {
-    // let htmlCollection = document.getElementsByClassName("service-card");
-    // let elements = Array.from(htmlCollection);
-    // console.log(htmlCollection);
-    // elements.map(element => {
-    //   $(element).fadeIn("slow", function(){
-
-    //   });
-    // });
-    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    // transition: 0.3s; 
-  
+    let htmlCollection = document.getElementsByClassName("service-card");
+    let elements = Array.from(htmlCollection);
+    elements.map(element => {
+      $(element).hover(function() {
+        $(this).css("box-shadow", "0 8px 16px 0 rgba(0, 0, 0, 0.2)");
+        }, 
+        function() {
+          $(this).css("box-shadow", "0 4px 8px 0 rgba(0, 0, 0, 0.2)");
+        }
+      );
+      
+    });
   });
 };
-
-// $( document ).ready(function() {
-//   $(".service-card").fadeIn(3000, function() {
-//     let htmlCollection = document.getElementsByClassName("service-card");
-//     let elements = Array.from(htmlCollection);
-//     console.log(htmlCollection);
-//     elements.map(element => {
-//       $(element).fadeIn("slow", function(){
-
-//       });
-//     });
-//   });
-
-
-// });
